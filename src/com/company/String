@@ -1,0 +1,54 @@
+(1) String is Non Primitive Datatype Bcoz String ka size fix ni hota int, char ki trh
+(2) String  is the sequence of characters (Array of Characters)
+EX- char[] c = {'H','i','m','a','n','s','h','u'} ;
+convert Array to string - String s = new String(c);
+(3) String is a "final class" in java.
+    -> [public final class String extends object impliments CharSequence] object - class , Charsequence - interface.
+
+(4) To create  String there are 3 classes
+    ->String ->StringBuffer ->String Builder
+
+(5) There are 2 method to create String Objects
+  -> String s = new String("Himanshu");
+  -> String s = "Himanshu"
+
+(6) String Objects are Immutable.
+
+(7) ->String s = new String("Himanshu"); // ye 2 objects bnaega (1) Heap mai (2) String Constent Poll mai.
+    -> String s = "Himanshu" // String Letaral wale ko Garbage Collection delete nahi kr skta. Bcoz reference variable internally is mintained by JVM.
+
+(8) STRING CONSTANT POOL was present in method area until 1.6 version. But After 1.6 version it was Shifted to Heap Area.
+    [ye same value ka object ni rkhta So ye value ko refer krta hai REFERENCE ko ni....]
+
+(9) STRING OBJ ARE IMMUTABLE-
+ EX- String s = new String("Himanshu");
+        s.concat("Sharma") // can't possible. concat kr dega But ek new obj create krta hai.
+
+(10) Why String Obj are Immutable ?
+Ans- String k case m agr ham bahut sare Objects create kre to all obj ek hi obj ko point krenge agr value same hai to
+& taki wo dusre reference value ko effect ni kre.
+
+(11) Why String class is final ?
+Ans- Taki Uski special features ko koi access ni kr pae.
+
+(12) equals method kis class ka hai.
+ans - Object class ka aur ye object m reference check krta hai. But jab Ham ese String m overide krek use krte hai to ye Value ko cheeck krta hai.
+
+(13) Why char Array is Better to Store Password Than String ?
+Ans - String Objects Are immutable [String s = new String("abc");] to ye 2 obj create kr dega ek heap m and 2 Pool mai
+      To Pool Garbage Collector k liye apply nahi hota jisse yadi kisine ek baar password create kr diya to Wo always Pool mai rahega & GC k through bhi delete nahi hoga
+      jisse password Hack hone k chances rhte hai
+      And char Array kabhi andr ki value bi print nahi krta wo reference print krta hai
+
+(14) Syntax of StringBuffer Class
+     public final class StringBuffer extends AbstractStringBuilder implements java.io.Serializable, CharSequence
+
+     StringBuffer 16 charcter ki memory rkhta hai default mai
+   (1)  if given String length is<16 =[16+String Length]
+   (2)  String Length>16 = [old capacity + 1 *2]
+
+(15) StringBuffer = Synchronized, thread safe , slow
+     StringBuilder = non-synchronized, fast
+
+(16) IndexOf() = tells the index no. we give the input in character like SOP(s.indexOf('e'));
+     charAt() = returns the character at the specified index, we give input in number like SOP(s.chatAt(3));
