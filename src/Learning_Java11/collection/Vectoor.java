@@ -10,6 +10,8 @@ public class Vectoor {
         v.add("Amit");
         v.add("Ashish");
         v.add("Garima");
+
+//        v.clear();
         Iterator<String> iitr = v.iterator();
         while (iitr.hasNext()){
             System.out.println(iitr.next());

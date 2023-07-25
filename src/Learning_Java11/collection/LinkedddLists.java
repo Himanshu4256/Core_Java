@@ -17,7 +17,7 @@ public class LinkedddLists {
         System.out.println("After Add=======");
         ll.addFirst("Hitesh");
         ll.addLast("Rupal");
-        System.out.println("After remove first :"+ll);
+        System.out.println("After adding first & last first :"+ll);
         ll.removeFirst();
         ll.removeLast();
         ll.removeFirstOccurrence("ABZ"); // first(right) se jo phle ABZ milega use remove krega
