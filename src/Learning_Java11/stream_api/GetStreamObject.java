@@ -37,7 +37,6 @@ public class GetStreamObject {
             System.out.println(t);
         });
 
-
         //V.Imp Stream for Collection - List,Set
 
         List<Integer> list = Arrays.asList(34,55,66,88,57);

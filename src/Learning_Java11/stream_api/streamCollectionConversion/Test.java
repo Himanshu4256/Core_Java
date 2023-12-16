@@ -16,9 +16,10 @@ public class Test {
         list.add(s2);
 
         // converting List to Map Using Streams
-        //Map<id,Student
+        //Map<id,Student>
         Map<Integer,Student> map = list.stream().collect(Collectors.toMap(Student::getId, student->student));
         System.out.println(map);
+
 
     }
 }

@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 public class StreamMethods {
     public static void main(String[] args) {
         //(1) filter(Predicate) ye filter krega value ko linke e>10 or not
-        //Predicate means boolean value function - ye true ya false return krega condt k base per
+        //Predicate means boolean value function - ye true ya false return krega condition k base per
 
         // (2) map(Function) - it returns value
 
