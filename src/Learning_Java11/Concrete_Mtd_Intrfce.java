@@ -27,7 +27,7 @@ interface Contract extends Concrete_Mtd_Intrfce{
 }
 
 
-
+// Support Multiple Inheritance
 class Contract1 implements Concrete_Mtd_Intrfce,Contract{
     public void wel(){
         System.out.println("Welcome to my concrete method in interface para");
